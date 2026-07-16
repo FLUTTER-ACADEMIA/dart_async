@@ -8,8 +8,9 @@ void main() {
   // scheduleMicrotask(() => print(''));
   print('Início main');
   Timer.run(() {
-    scheduleMicrotask(() => print('Nova Microtask 1'));
     print('Event 1');
+    scheduleMicrotask(() => print('Nova Microtask 3'));
+    print('Event 4');
   });
   Timer.run(() => print('Event 2'));
   Timer.run(() => print('Event 3'));
