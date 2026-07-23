@@ -19,7 +19,7 @@ void main() {
   //       print('Terminou com erro: $erro');
   //     });
   try {
-    final aguardando = await inseringoAlgoBemLento().timeout(Duration(seconds: 1));
+    final aguardando = inseringoAlgoBemLento().timeout(Duration(seconds: 1));
   } on TimeoutException catch (e) {
     print('Finalizou com timeout: $e');
   }
