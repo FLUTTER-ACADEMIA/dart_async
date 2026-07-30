@@ -1,3 +1,8 @@
+//*****************************************************************************/
+// TAKE: REALIZA UMA TRANSFORMAÇÃO NA STREAM.
+// TAKE: FINALIZA A STREAM - CRIA UM LIMITE PARA A STREAM E DEPOIS MATA ELA.
+//*****************************************************************************/
+
 Future<void> main() async {
   print('Inicio...');
   final interval = Duration(seconds: 2);

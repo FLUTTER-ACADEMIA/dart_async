@@ -1,6 +1,11 @@
+//*****************************************************************************/
+// TAKE WHILE: FAZ O MESMO QUE O TAKE PORÉM COM UMA CONDIÇÃO - UM MÉTODO DE
+// CALLBACK.
+//*****************************************************************************/
+
 Future<void> main() async {
   print('Inicio...');
-  final interval = Duration(seconds: 2);
+  final interval = Duration(seconds: 1);
 
   var stream = Stream<int>.periodic(interval, callback);
 
